@@ -1,5 +1,5 @@
 class String
-  define_method(:word_frequency) do
-    total = scan("a").length()
+  define_method(:word_frequency) do |word|
+    total = scan(word).length()
   end
 end
