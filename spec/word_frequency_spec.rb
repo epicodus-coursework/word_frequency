@@ -13,4 +13,8 @@ describe('String#word_frequency') do
   it("searches a sentence to see how many times a particular string occurs") do
     expect(("Barbara went to the bar.").word_frequency(word="bar")).to(eq(3))
   end
+
+  it("searches a sentence to see how many times a particular string occurs") do
+    expect(("Barbara went to the bar.").word_frequency(word="BAR")).to(eq(3))
+  end
 end
